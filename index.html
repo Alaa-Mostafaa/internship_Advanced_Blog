@@ -16,7 +16,13 @@
     <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
-   
+    <!-- Loading -->
+     <div id="loading" >
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <span class="loader"></span>
+      </div>
+     </div>
+    <!-- End of Loading --> 
 <!-- Header -->
     <header class="bg-primary">
       <p class="text-white fs-1 text-center pt-5" href="#">My Advanced Blog</p>
@@ -47,11 +53,9 @@
               <li class="nav-item">
                 <a class="nav-link text-white fw-bold" href="#">About</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link text-white fw-bold" href="#">Contact</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link text-white fw-bold" href="#">Portfolio</a>
               </li>
@@ -62,9 +66,6 @@
        <!-- End of Navigation bar -->
     </header>
 <!-- End of  Header -->
-
-   
-
     <!-- Main content -->
     <main>
       <!-- Back to top button-->
@@ -72,8 +73,6 @@
         <i class="fa-solid fa-circle-arrow-up fs-2 text-primary"></i>
       </div>
       <!-- End of Back to top button-->
-
-
       <section class="container my-5">
         <div class="row g-5">
           <!-- Cards ( Left side )-->
@@ -115,7 +114,6 @@
             </div>
           </div>
           <!-- End of Cards ( Left side ) -->
-
           <!-- Side content-->
           <aside class="col-md-5 col-sm-12 col-lg-4">
             <!-- (About the Blog - Right side )-->
@@ -150,7 +148,6 @@
           <!-- End of Side content-->
         </div>
       </section>
-
 <!-- Footer -->
       <footer>
         <section class="container py-5 text-white">
@@ -174,27 +171,20 @@
               <label for="exampleInputMessage1" class="form-label "
                 >Message</label
               >
-              <textarea
-                
+              <textarea  
                 class="form-control"
                 id="exampleInputMessage1"
-              /></textarea>
+              ></textarea>
             </div>
             <button class="btn btn-primary">Send</button>
           </form>
-
           <p class="text-center pt-5  m-0">
             All Rights Reserved © 2024 | Designed by Alaa Mostafa
           </p>
         </section>
-
-
       </footer>
-
   <!-- End of Footer -->
-
     </main>
-
     <!-- End of Main content -->
     <script src="js/bootstrap.bundle.min.js" async defer></script>
     <script src="js/index.js"></script>
