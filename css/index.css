@@ -1,0 +1,126 @@
+/* Common styles */
+:root {
+  --main-background-color: #f4f4f9;
+  --white-background-color: white;
+  --blue-hover: #0056b3;
+  --sidebar-background-color: #f8f9fa;
+  --sidebar-list-items-color: #007bff;
+  --footer-background-color: #343a40;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--main-background-color);
+}
+
+html {
+  scroll-behavior: auto;
+}
+/* End of Common styles */
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sidebar-list-items-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-hover);
+}
+/* End of Scroll bar */
+
+/* Navigation bar */
+.nav-link:hover {
+  text-decoration: underline;
+}
+.navbar-toggler {
+  background-color: var(--white-background-color);
+  transform: translate(50px, -65px);
+}
+/* End of Navigation bar */
+
+/* Cards ( Left side ) */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  --bs-card-border-radius: none;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.card .btn-primary:hover {
+  background-color: var(--blue-hover);
+}
+/* End of cards ( Left side ) */
+
+/* Side content (About the Blog - Right side ) */
+.sidebar {
+  background-color: var(--sidebar-background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sidebar h3 {
+  font-size: 1.2rem;
+}
+.sidebar ul li {
+  color: var(--sidebar-list-items-color);
+}
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+/* End of Side content (About the Blog - Right side ) */
+
+/* Footer */
+footer {
+  background-color: var(--footer-background-color);
+}
+/* End of Footer */
+
+/* Fixed arrow  ( Back to top button )*/
+#fixed-arrow {
+  bottom: 10%;
+  right: 4%;
+  z-index: 99;
+  display: none;
+}
+
+/* End of Fixed arrow  ( Back to top button )*/
+
+/* Contact form in the footer */
+.form-control {
+  width: 50%;
+}
+/* End of Contact form in the footer */
+
+/* Media query */
+@media screen and (max-width: 480px) {
+  .navbar-toggler {
+    transform: translate(0px, -65px);
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navbar-toggler {
+    transform: translate(-8px, -60px);
+    font-size: 15px;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}
+/* End of Media query */
